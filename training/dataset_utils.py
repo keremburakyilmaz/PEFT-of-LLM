@@ -2,10 +2,11 @@ from datasets import load_dataset
 from transformers import PreTrainedTokenizerBase
 
 
-def load_and_prepare_finetome(tokenizer: PreTrainedTokenizerBase, max_length: int = 1024, seed: int = 42):
+def load_and_prepare_finetome(tokenizer: PreTrainedTokenizerBase, max_length: int = 512, seed: int = 42):
     print("Loading mlabonne/FineTome-100k")
     ds = load_dataset("mlabonne/FineTome-100k", split="train")
 
+    ds = ds.shuffle(seed=seed).select(range(40_000))
     def convert_sharegpt_to_llama_messages(conv):
         msgs = []
         for m in conv:
@@ -21,6 +22,9 @@ def load_and_prepare_finetome(tokenizer: PreTrainedTokenizerBase, max_length: in
 
             content = m.get("content") or m.get("value") or ""
             msgs.append({"role": role, "content": content})
+
+        if len(msgs) > 4:
+            msgs = msgs[-4:]   # keep last 4 messages (user/assistant pairs)
         return msgs
 
     def formatting_prompts_func(examples):

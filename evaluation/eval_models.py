@@ -190,7 +190,7 @@ def main():
         results[model_name] = summary
 
     os.makedirs("evaluation_results", exist_ok=True)
-    out_path = "evaluation_results/eval_results_cpu.json"
+    out_path = "evaluation_results/eval_results_models.json"
 
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)

@@ -54,6 +54,13 @@ def main():
         report_to="none",
     )
 
+    is_resume = bool(training_args.resume_from_checkpoint)
+
+    callback = ResourceUsageCallback(
+        log_file=LOG_FILE,
+        is_resume=is_resume
+    )
+
     trainer = SFTTrainer(
         model=model,
         tokenizer=tokenizer,
@@ -63,7 +70,7 @@ def main():
         dataset_text_field="text",
         max_seq_length=512,
         args=training_args,
-        callbacks=[ResourceUsageCallback(LOG_FILE)],
+        callbacks=[callback],
     )
 
     trainer.train()

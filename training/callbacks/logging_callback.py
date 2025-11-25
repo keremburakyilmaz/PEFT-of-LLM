@@ -11,12 +11,16 @@ except ImportError:
 
 
 class ResourceUsageCallback(TrainerCallback):
-    def __init__(self, log_file: str):
+    def __init__(self, log_file: str, is_resume: bool = False):
         super().__init__()
         self.log_file = log_file
         self.start_time = None
 
-        if os.path.exists(self.log_file):
+        log_dir = os.path.dirname(self.log_file)
+        if log_dir and not os.path.exists(log_dir):
+            os.makedirs(log_dir, exist_ok=True)
+
+        if (not is_resume) and os.path.exists(self.log_file):
             os.remove(self.log_file)
 
     def log(self, text: str):

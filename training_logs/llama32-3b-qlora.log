@@ -1,0 +1,121 @@
+=== Training started ===
+Output dir: checkpoints/llama32-3b-qlora-finetome
+Batch size: 2
+Grad accumulate: 8
+Epochs: 2
+LR: 0.0002
+BF16: True
+Optimizer: OptimizerNames.PAGED_ADAMW_8BIT
+[step 50] loss=1.1916 lr=0.000200 | GPU alloc=2287.5MB, reserved=10790.0MB | CPU RAM=1385.9MB | elapsed=3.7min, steps/s=0.22
+[step 100] loss=0.8715 lr=0.000200 | GPU alloc=2287.5MB, reserved=10790.0MB | CPU RAM=1393.5MB | elapsed=7.5min, steps/s=0.22
+[step 150] loss=0.8576 lr=0.000200 | GPU alloc=2287.5MB, reserved=10922.0MB | CPU RAM=1399.7MB | elapsed=11.8min, steps/s=0.21
+[step 200] loss=0.8513 lr=0.000200 | GPU alloc=2287.5MB, reserved=10922.0MB | CPU RAM=1405.5MB | elapsed=15.6min, steps/s=0.21
+[step 250] loss=0.8024 lr=0.000199 | GPU alloc=2287.5MB, reserved=10922.0MB | CPU RAM=1410.2MB | elapsed=19.4min, steps/s=0.22
+[step 300] loss=0.8281 lr=0.000199 | GPU alloc=2287.5MB, reserved=10922.0MB | CPU RAM=1414.6MB | elapsed=23.1min, steps/s=0.22
+[step 350] loss=0.8261 lr=0.000198 | GPU alloc=2287.5MB, reserved=10922.0MB | CPU RAM=1418.5MB | elapsed=26.9min, steps/s=0.22
+[step 400] loss=0.8326 lr=0.000197 | GPU alloc=2287.5MB, reserved=10922.0MB | CPU RAM=1422.1MB | elapsed=30.7min, steps/s=0.22
+[step 450] loss=0.8296 lr=0.000197 | GPU alloc=2287.5MB, reserved=10922.0MB | CPU RAM=1425.4MB | elapsed=34.5min, steps/s=0.22
+[step 500] loss=0.8061 lr=0.000196 | GPU alloc=2287.5MB, reserved=10922.0MB | CPU RAM=1428.3MB | elapsed=38.2min, steps/s=0.22
+Checkpoint saved at step 500 → checkpoints/llama32-3b-qlora-finetome
+[step 550] loss=0.7789 lr=0.000195 | GPU alloc=2287.5MB, reserved=10922.0MB | CPU RAM=1489.4MB | elapsed=42.0min, steps/s=0.22
+[step 600] loss=0.8141 lr=0.000194 | GPU alloc=2287.5MB, reserved=10922.0MB | CPU RAM=1491.8MB | elapsed=45.8min, steps/s=0.22
+[step 650] loss=0.8022 lr=0.000193 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=1494.0MB | elapsed=49.6min, steps/s=0.22
+[step 700] loss=0.8266 lr=0.000191 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=1496.0MB | elapsed=53.4min, steps/s=0.22
+[step 750] loss=0.8018 lr=0.000190 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=1497.9MB | elapsed=57.2min, steps/s=0.22
+[step 800] loss=0.8304 lr=0.000189 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=1499.7MB | elapsed=61.0min, steps/s=0.22
+[step 850] loss=0.8020 lr=0.000187 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=1501.4MB | elapsed=65.0min, steps/s=0.22
+[step 900] loss=0.8090 lr=0.000186 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=1502.9MB | elapsed=68.9min, steps/s=0.22
+[step 950] loss=0.7954 lr=0.000184 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=1504.1MB | elapsed=73.0min, steps/s=0.22
+[step 1000] loss=0.7721 lr=0.000182 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=617.6MB | elapsed=77.0min, steps/s=0.22
+Checkpoint saved at step 1000 → checkpoints/llama32-3b-qlora-finetome
+[step 1050] loss=0.7481 lr=0.000180 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=621.1MB | elapsed=80.9min, steps/s=0.22
+[step 1100] loss=0.8020 lr=0.000178 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=622.1MB | elapsed=84.7min, steps/s=0.22
+[step 1150] loss=0.7722 lr=0.000176 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=623.1MB | elapsed=88.6min, steps/s=0.22
+[step 1200] loss=0.7673 lr=0.000174 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.0MB | elapsed=92.4min, steps/s=0.22
+[step 1250] loss=0.7783 lr=0.000172 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.8MB | elapsed=96.2min, steps/s=0.22
+[step 1300] loss=0.7912 lr=0.000170 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=625.5MB | elapsed=100.1min, steps/s=0.22
+[step 1350] loss=0.7676 lr=0.000167 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=626.2MB | elapsed=103.8min, steps/s=0.22
+[step 1400] loss=0.7678 lr=0.000165 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=626.9MB | elapsed=107.7min, steps/s=0.22
+[step 1450] loss=0.7750 lr=0.000162 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.4MB | elapsed=111.6min, steps/s=0.22
+[step 1500] loss=0.7619 lr=0.000160 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.9MB | elapsed=115.5min, steps/s=0.22
+Checkpoint saved at step 1500 → checkpoints/llama32-3b-qlora-finetome
+[step 1550] loss=0.7920 lr=0.000157 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=628.8MB | elapsed=119.5min, steps/s=0.22
+[step 1600] loss=0.7733 lr=0.000155 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=629.4MB | elapsed=123.5min, steps/s=0.22
+[step 1650] loss=0.7700 lr=0.000152 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=629.9MB | elapsed=127.2min, steps/s=0.22
+[step 1700] loss=0.7387 lr=0.000149 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.6MB | elapsed=131.0min, steps/s=0.22
+[step 1750] loss=0.7640 lr=0.000146 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.8MB | elapsed=134.6min, steps/s=0.22
+[step 1800] loss=0.7573 lr=0.000143 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=625.0MB | elapsed=138.3min, steps/s=0.22
+[step 1850] loss=0.7487 lr=0.000140 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=625.1MB | elapsed=141.9min, steps/s=0.22
+[step 1900] loss=0.7404 lr=0.000138 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.9MB | elapsed=145.6min, steps/s=0.22
+[step 1950] loss=0.7656 lr=0.000135 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=566.1MB | elapsed=149.6min, steps/s=0.22
+[step 2000] loss=0.7355 lr=0.000132 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=566.3MB | elapsed=153.5min, steps/s=0.22
+Checkpoint saved at step 2000 → checkpoints/llama32-3b-qlora-finetome
+[step 2050] loss=0.7615 lr=0.000128 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=623.9MB | elapsed=157.3min, steps/s=0.22
+[step 2100] loss=0.7601 lr=0.000125 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=623.3MB | elapsed=161.2min, steps/s=0.22
+[step 2150] loss=0.7444 lr=0.000122 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=623.1MB | elapsed=165.0min, steps/s=0.22
+[step 2200] loss=0.7330 lr=0.000119 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=623.1MB | elapsed=168.8min, steps/s=0.22
+[step 2250] loss=0.7658 lr=0.000116 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=623.1MB | elapsed=172.6min, steps/s=0.22
+[step 2300] loss=0.7207 lr=0.000113 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=623.1MB | elapsed=176.5min, steps/s=0.22
+[step 2350] loss=0.7605 lr=0.000110 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=623.1MB | elapsed=180.5min, steps/s=0.22
+[step 2400] loss=0.7257 lr=0.000106 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=623.1MB | elapsed=184.3min, steps/s=0.22
+[step 2450] loss=0.7369 lr=0.000103 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=623.1MB | elapsed=188.3min, steps/s=0.22
+[step 2500] loss=0.6728 lr=0.000100 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=623.8MB | elapsed=192.3min, steps/s=0.22
+Checkpoint saved at step 2500 → checkpoints/llama32-3b-qlora-finetome
+[step 2550] loss=0.6456 lr=0.000097 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=626.8MB | elapsed=196.3min, steps/s=0.22
+[step 2600] loss=0.6850 lr=0.000094 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=626.8MB | elapsed=200.3min, steps/s=0.22
+[step 2650] loss=0.6719 lr=0.000090 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.2MB | elapsed=204.2min, steps/s=0.22
+[step 2700] loss=0.6506 lr=0.000087 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.2MB | elapsed=208.2min, steps/s=0.22
+[step 2750] loss=0.6890 lr=0.000084 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.2MB | elapsed=212.3min, steps/s=0.22
+[step 2800] loss=0.6409 lr=0.000081 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.2MB | elapsed=216.2min, steps/s=0.22
+[step 2850] loss=0.6450 lr=0.000078 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.2MB | elapsed=220.2min, steps/s=0.22
+[step 2900] loss=0.6395 lr=0.000075 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.2MB | elapsed=224.0min, steps/s=0.22
+[step 2950] loss=0.6656 lr=0.000072 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.2MB | elapsed=228.0min, steps/s=0.22
+[step 3000] loss=0.6462 lr=0.000068 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.2MB | elapsed=232.0min, steps/s=0.22
+Checkpoint saved at step 3000 → checkpoints/llama32-3b-qlora-finetome
+[step 3050] loss=0.6641 lr=0.000065 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.6MB | elapsed=236.0min, steps/s=0.22
+[step 3100] loss=0.6612 lr=0.000062 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.6MB | elapsed=240.0min, steps/s=0.22
+[step 3150] loss=0.6417 lr=0.000060 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.6MB | elapsed=243.9min, steps/s=0.22
+[step 3200] loss=0.6758 lr=0.000057 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.6MB | elapsed=247.9min, steps/s=0.22
+[step 3250] loss=0.6288 lr=0.000054 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.6MB | elapsed=251.9min, steps/s=0.22
+[step 3300] loss=0.6396 lr=0.000051 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.6MB | elapsed=255.9min, steps/s=0.21
+[step 3350] loss=0.6102 lr=0.000048 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.6MB | elapsed=259.9min, steps/s=0.21
+[step 3400] loss=0.6316 lr=0.000045 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.6MB | elapsed=263.9min, steps/s=0.21
+[step 3450] loss=0.6419 lr=0.000043 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.6MB | elapsed=267.7min, steps/s=0.21
+[step 3500] loss=0.6425 lr=0.000040 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=626.6MB | elapsed=271.6min, steps/s=0.21
+Checkpoint saved at step 3500 → checkpoints/llama32-3b-qlora-finetome
+[step 3550] loss=0.6601 lr=0.000038 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.8MB | elapsed=275.7min, steps/s=0.21
+[step 3600] loss=0.6242 lr=0.000035 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.8MB | elapsed=279.7min, steps/s=0.21
+[step 3650] loss=0.6403 lr=0.000033 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.8MB | elapsed=283.5min, steps/s=0.21
+[step 3700] loss=0.6461 lr=0.000030 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.8MB | elapsed=287.4min, steps/s=0.21
+[step 3750] loss=0.6320 lr=0.000028 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=628.2MB | elapsed=291.6min, steps/s=0.21
+[step 3800] loss=0.6475 lr=0.000026 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=628.2MB | elapsed=295.6min, steps/s=0.21
+[step 3850] loss=0.6652 lr=0.000024 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=628.2MB | elapsed=299.5min, steps/s=0.21
+[step 3900] loss=0.6249 lr=0.000022 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=628.2MB | elapsed=303.5min, steps/s=0.21
+[step 3950] loss=0.6407 lr=0.000020 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=628.2MB | elapsed=307.4min, steps/s=0.21
+[step 4000] loss=0.6556 lr=0.000018 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=628.2MB | elapsed=311.4min, steps/s=0.21
+Checkpoint saved at step 4000 → checkpoints/llama32-3b-qlora-finetome
+[step 4050] loss=0.6461 lr=0.000016 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=628.4MB | elapsed=315.3min, steps/s=0.21
+[step 4100] loss=0.6397 lr=0.000014 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=626.2MB | elapsed=319.2min, steps/s=0.21
+[step 4150] loss=0.6447 lr=0.000013 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=626.2MB | elapsed=323.3min, steps/s=0.21
+[step 4200] loss=0.6264 lr=0.000011 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.3MB | elapsed=327.6min, steps/s=0.21
+[step 4250] loss=0.6439 lr=0.000010 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.3MB | elapsed=331.6min, steps/s=0.21
+[step 4300] loss=0.6517 lr=0.000009 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.3MB | elapsed=335.6min, steps/s=0.21
+[step 4350] loss=0.6486 lr=0.000007 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.3MB | elapsed=339.6min, steps/s=0.21
+[step 4400] loss=0.6334 lr=0.000006 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.3MB | elapsed=343.5min, steps/s=0.21
+[step 4450] loss=0.6279 lr=0.000005 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.3MB | elapsed=347.5min, steps/s=0.21
+[step 4500] loss=0.6367 lr=0.000004 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.3MB | elapsed=351.5min, steps/s=0.21
+Checkpoint saved at step 4500 → checkpoints/llama32-3b-qlora-finetome
+[step 4550] loss=0.6374 lr=0.000003 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=626.9MB | elapsed=355.5min, steps/s=0.21
+[step 4600] loss=0.6285 lr=0.000003 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=626.9MB | elapsed=359.5min, steps/s=0.21
+[step 4650] loss=0.6551 lr=0.000002 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.8MB | elapsed=363.4min, steps/s=0.21
+[step 4700] loss=0.6656 lr=0.000001 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.8MB | elapsed=367.4min, steps/s=0.21
+[step 4750] loss=0.6308 lr=0.000001 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.8MB | elapsed=371.4min, steps/s=0.21
+[step 4800] loss=0.6336 lr=0.000000 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.8MB | elapsed=375.3min, steps/s=0.21
+[step 4850] loss=0.6195 lr=0.000000 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=624.8MB | elapsed=379.3min, steps/s=0.21
+[step 4900] loss=0.6804 lr=0.000000 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=625.2MB | elapsed=383.3min, steps/s=0.21
+[step 4950] loss=0.6142 lr=0.000000 | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=625.7MB | elapsed=387.2min, steps/s=0.21
+Checkpoint saved at step 4950 → checkpoints/llama32-3b-qlora-finetome
+[step 4950] loss=N/A lr=N/A | GPU alloc=2287.5MB, reserved=10924.0MB | CPU RAM=627.9MB | elapsed=387.2min, steps/s=0.21
+=== Training finished ===
+Total steps: 4950
+Total wall-clock time: 6.45 hours

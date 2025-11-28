@@ -38,7 +38,7 @@ EVAL_PROMPTS = [
     "Bias-variance tradeoff in simple terms.",
 ]
 
-MAX_NEW_TOKENS = 128
+MAX_NEW_TOKENS = 256
 TEMPERATURE = 0.2
 TOP_P = 0.9
 SEED = 42

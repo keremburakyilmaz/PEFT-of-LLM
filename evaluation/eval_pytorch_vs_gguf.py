@@ -28,17 +28,17 @@ MODEL_CONFIGS = [
     {
         "name": "llama32-1b-lora-finetome",
         "adapter_dir": "models/llama32-1b-lora-finetome",
-        "gguf_path": "gguf/llama32-1b-lora-finetome-q4_k_m.gguf",
+        "gguf_path": "gguf_export/llama32-1b-lora_q8_0.gguf",
     },
     {
         "name": "llama32-1b-qlora-finetome",
         "adapter_dir": "models/llama32-1b-qlora-finetome",
-        "gguf_path": "gguf/llama32-1b-qlora-finetome-q4_k_m.gguf",
+        "gguf_path": "gguf_export/llama32-1b-qlora_q8_0.gguf",
     },
     {
         "name": "llama32-3b-qlora-finetome",
         "adapter_dir": "models/llama32-3b-qlora-finetome",
-        "gguf_path": "gguf/llama32-3b-qlora-finetome-q4_k_m.gguf",
+        "gguf_path": "gguf_export/llama32-3b-qlora_q4_k_m.gguf",
     },
 ]
 

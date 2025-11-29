@@ -1,0 +1,33 @@
+=== Training started ===
+Output dir: models/llama32-3b-qlora-finetome-exam
+Batch size: 4
+Grad accumulate: 4
+Epochs: 2
+LR: 0.0001
+BF16: True
+Optimizer: OptimizerNames.PAGED_ADAMW_8BIT
+[step 50] loss=0.9448 lr=0.000100 | GPU alloc=2287.2MB, reserved=10282.0MB | CPU RAM=1359.9MB | elapsed=1.2min, steps/s=0.68
+[step 100] loss=0.1049 lr=0.000093 | GPU alloc=2287.2MB, reserved=11172.0MB | CPU RAM=1360.3MB | elapsed=2.6min, steps/s=0.64
+[step 150] loss=0.0994 lr=0.000087 | GPU alloc=2287.2MB, reserved=11172.0MB | CPU RAM=1360.4MB | elapsed=4.0min, steps/s=0.62
+[step 200] loss=0.1039 lr=0.000080 | GPU alloc=2287.2MB, reserved=11172.0MB | CPU RAM=1360.6MB | elapsed=5.2min, steps/s=0.64
+Checkpoint saved at step 200 → models/llama32-3b-qlora-finetome-exam
+[step 250] loss=0.1033 lr=0.000074 | GPU alloc=2287.2MB, reserved=12136.0MB | CPU RAM=1387.0MB | elapsed=6.8min, steps/s=0.62
+[step 300] loss=0.1065 lr=0.000067 | GPU alloc=2287.2MB, reserved=12136.0MB | CPU RAM=1387.0MB | elapsed=8.2min, steps/s=0.61
+[step 350] loss=0.1031 lr=0.000061 | GPU alloc=2287.2MB, reserved=12136.0MB | CPU RAM=1387.0MB | elapsed=9.5min, steps/s=0.61
+[step 400] loss=0.0973 lr=0.000054 | GPU alloc=2287.2MB, reserved=12136.0MB | CPU RAM=1387.0MB | elapsed=11.1min, steps/s=0.60
+Checkpoint saved at step 400 → models/llama32-3b-qlora-finetome-exam
+[step 450] loss=0.0941 lr=0.000048 | GPU alloc=2287.2MB, reserved=12362.0MB | CPU RAM=1388.4MB | elapsed=12.5min, steps/s=0.60
+[step 500] loss=0.0977 lr=0.000041 | GPU alloc=2287.2MB, reserved=12362.0MB | CPU RAM=1388.4MB | elapsed=14.7min, steps/s=0.57
+[step 550] loss=0.0939 lr=0.000035 | GPU alloc=2287.2MB, reserved=12362.0MB | CPU RAM=1388.4MB | elapsed=16.1min, steps/s=0.57
+[step 600] loss=0.0974 lr=0.000028 | GPU alloc=2287.2MB, reserved=12362.0MB | CPU RAM=1388.4MB | elapsed=17.5min, steps/s=0.57
+Checkpoint saved at step 600 → models/llama32-3b-qlora-finetome-exam
+[step 650] loss=0.0982 lr=0.000021 | GPU alloc=2287.2MB, reserved=12362.0MB | CPU RAM=1392.1MB | elapsed=19.0min, steps/s=0.57
+[step 700] loss=0.0937 lr=0.000015 | GPU alloc=2287.2MB, reserved=12362.0MB | CPU RAM=1392.2MB | elapsed=20.6min, steps/s=0.57
+[step 750] loss=0.0928 lr=0.000008 | GPU alloc=2287.2MB, reserved=12362.0MB | CPU RAM=1392.2MB | elapsed=22.2min, steps/s=0.56
+[step 800] loss=0.0928 lr=0.000002 | GPU alloc=2287.2MB, reserved=12362.0MB | CPU RAM=1392.2MB | elapsed=23.6min, steps/s=0.56
+Checkpoint saved at step 800 → models/llama32-3b-qlora-finetome-exam
+Checkpoint saved at step 814 → models/llama32-3b-qlora-finetome-exam
+[step 814] loss=N/A lr=N/A | GPU alloc=2287.2MB, reserved=12362.0MB | CPU RAM=1392.6MB | elapsed=24.4min, steps/s=0.56
+=== Training finished ===
+Total steps: 814
+Total wall-clock time: 0.41 hours

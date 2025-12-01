@@ -1,7 +1,3 @@
-"""Train exam model directly on base Llama-3.2-3B-Instruct, skipping FineTome fine-tuning.
-
-This avoids meta-instruction patterns that may have been learned from FineTome-100k.
-"""
 import torch
 from datasets import load_dataset
 from transformers import (
@@ -9,7 +5,6 @@ from transformers import (
     AutoTokenizer,
     TrainingArguments,
     BitsAndBytesConfig,
-    LoraConfig,
 )
 from peft import LoraConfig
 from trl import SFTTrainer
@@ -20,8 +15,8 @@ EXAM_DATA_PATH = "data/id2223_exam_prep_full.jsonl"
 
 BASE_MODEL = "meta-llama/Llama-3.2-3B-Instruct"
 
-SAVE_DIR = "models/llama32-3b-qlora-exam-direct"
-LOG_FILE = "training_logs/llama32-3b-qlora_exam_direct.log"
+SAVE_DIR = "models/llama32-3b-qlora-exam"
+LOG_FILE = "training_logs/llama32-3b-qlora_exam.log"
 
 
 def main():
@@ -60,7 +55,6 @@ def main():
     )
     base_model.config.use_cache = False
 
-    # Create LoRA config directly (not loading from FineTome)
     print("Creating LoRA adapter (training from base model, not FineTome)...")
     lora_config = LoraConfig(
         r=16,
@@ -77,8 +71,8 @@ def main():
         output_dir=SAVE_DIR,
         per_device_train_batch_size=4,
         gradient_accumulation_steps=4,
-        num_train_epochs=3,  # More epochs since starting from base model
-        learning_rate=2e-4,  # Higher LR appropriate for training from base
+        num_train_epochs=3,  
+        learning_rate=2e-4,  
         warmup_steps=100,
         logging_steps=50,
         save_steps=200,
@@ -113,7 +107,7 @@ def main():
     print(f"Training for {training_args.num_train_epochs} epochs")
     print(f"Learning rate: {training_args.learning_rate}\n")
 
-    trainer.train()
+    trainer.train(resume_from_checkpoint=True)
 
     print(f"\nTraining complete! Saving model to {SAVE_DIR}")
     trainer.save_model(SAVE_DIR)

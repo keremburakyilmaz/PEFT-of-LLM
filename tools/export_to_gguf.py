@@ -19,6 +19,7 @@ TRAINED_MODELS = {
     "llama32-1b-qlora": "models/llama32-1b-qlora-finetome",
     "llama32-3b-qlora": "models/llama32-3b-qlora-finetome",
     "llama32-1b-qlora-exam": "models/llama32-1b-qlora-finetome-exam",
+    "llama32-3b-qlora-exam": "models/llama32-3b-qlora-finetome-exam",
 }
 
 OUT_DIR = "gguf_export"

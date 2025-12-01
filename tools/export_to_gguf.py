@@ -15,11 +15,12 @@ BASE_MODELS = {
 }
 
 TRAINED_MODELS = {
-    "llama32-1b-lora": "models/llama32-1b-lora-finetome",
-    "llama32-1b-qlora": "models/llama32-1b-qlora-finetome",
-    "llama32-3b-qlora": "models/llama32-3b-qlora-finetome",
-    "llama32-1b-qlora-exam": "models/llama32-1b-qlora-finetome-exam",
-    "llama32-3b-qlora-exam": "models/llama32-3b-qlora-finetome-exam",
+    "llama32-1b-lora-finetome": "models/llama32-1b-lora-finetome",
+    "llama32-1b-qlora-finetome": "models/llama32-1b-qlora-finetome",
+    "llama32-3b-qlora-finetome": "models/llama32-3b-qlora-finetome",
+    "llama32-1b-qlora-finetome-exam": "models/llama32-1b-qlora-finetome-exam",
+    "llama32-3b-qlora-finetome-exam": "models/llama32-3b-qlora-finetome-exam",
+    "llama32-3b-qlora-exam": "models/llama32-3b-qlora-exam",
 }
 
 OUT_DIR = "gguf_export"

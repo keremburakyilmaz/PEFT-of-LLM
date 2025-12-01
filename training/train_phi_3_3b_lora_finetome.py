@@ -23,7 +23,6 @@ def main():
         MODEL_ID,
         torch_dtype=torch.bfloat16,
         device_map="auto",
-        attn_implementation="eager",
     )
     model.config.use_cache = False
 
@@ -43,7 +42,7 @@ def main():
         output_dir=SAVE_DIR,
         per_device_train_batch_size=4,
         gradient_accumulation_steps=4,
-        num_train_epochs=2,
+        num_train_epochs=1,
         learning_rate=2e-4,
         warmup_steps=50,
         logging_steps=50,

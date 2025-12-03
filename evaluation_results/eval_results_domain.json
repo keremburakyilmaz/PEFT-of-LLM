@@ -1,233 +1,310 @@
 {
-  "llama32-1b-base": {
-    "model_name": "llama32-1b-base",
-    "model_path": "meta-llama/Llama-3.2-1B-Instruct",
+  "llama32-3b-base": {
+    "model_name": "llama32-3b-base",
+    "model_path": "meta-llama/Llama-3.2-3B-Instruct",
     "num_prompts": 10,
-    "total_time_sec": 428.1398853999999,
-    "avg_time_per_prompt_sec": 42.81398853999999,
+    "total_time_sec": 547.8501468999893,
+    "avg_time_per_prompt_sec": 54.78501468999893,
     "per_prompt_times_sec": [
-      17.476561700001184,
-      39.3290072000018,
-      44.019755400004215,
-      48.215566499995475,
-      60.43791380000039,
-      42.35194279999996,
-      38.45994619999692,
-      42.005483100001584,
-      46.17949600000429,
-      49.57351109999581
+      40.04503929999191,
+      93.60034460001043,
+      46.799480600020615,
+      34.06501550000394,
+      34.23875640000915,
+      34.35423210001318,
+      35.7491461999889,
+      35.63814699999057,
+      41.22467460000189,
+      152.1253114999854
     ],
     "responses": [
       {
         "prompt": "Explain overfitting in simple terms.",
-        "response": "Overfitting is a common problem in machine learning models, where a model is too complex and fits the training data too well, but not well enough for new, unseen data. Here's a simple explanation:\n\n**Imagine you're trying to fit a perfect pair of shoes to a specific pair of feet.**\n\nIn this case, the shoes are the model, and the feet are the training data. If the shoes are too perfect, they'll fit the feet perfectly, but they won't be able to walk or move in the same way as a real person.\n\n**Overfitting occurs when:**\n\n1. The model is too complex",
-        "time_sec": 17.476561700001184
+        "response": "Overfitting is a common problem in machine learning where a model is too complex and fits the training data too well, but performs poorly on new, unseen data. Here's a simple analogy to help illustrate it:\n\nImagine you're trying to draw a picture of a cat. You're given a bunch of pictures of cats and you want to learn the features that make a cat look like a cat.\n\n**Underfitting**: If you draw a very simple picture, like a stick figure with two circles for eyes and a line for a body. This picture might not capture the complexity of a real cat, but it's not too bad.",
+        "time_sec": 40.04503929999191
       },
       {
         "prompt": "Summarize gradient descent.",
-        "response": "Gradient Descent is an optimization algorithm used to minimize the loss function of a model by adjusting the weights and biases of a neural network. Here's a simplified summary:\n\n**What is Gradient Descent?**\n\nGradient Descent is an iterative algorithm that updates the model's parameters (weights and biases) to minimize the difference between the predicted output and the actual output. It's a key component of machine learning algorithms, particularly in neural networks.\n\n**How does it work?**\n\n1. **Initialization**: The algorithm starts with an initial set of parameters (weights and biases) and an initial estimate of the loss function.\n2. **Forward Pass**:",
-        "time_sec": 39.3290072000018
+        "response": "Gradient Descent is an optimization algorithm used to minimize the cost function in machine learning models. Here's a summary:\n\n**Key Concepts:**\n\n1. **Cost Function**: A mathematical function that measures the difference between the model's predictions and the actual output.\n2. **Gradient**: The rate of change of the cost function with respect to a model's parameter.\n3. **Optimization**: The process of adjusting the model's parameters to minimize the cost function.\n\n**Gradient Descent Algorithm:**\n\n1. Initialize the model's parameters (weights and biases).\n2. Calculate the cost function's gradient with respect to the parameters.\n3. Update",
+        "time_sec": 93.60034460001043
       },
       {
         "prompt": "Explain the difference between supervised and unsupervised learning.",
-        "response": "Supervised and unsupervised learning are two fundamental concepts in machine learning, which are used to train artificial neural networks to make predictions or classify data.\n\n**Supervised Learning:**\n\nIn supervised learning, the algorithm is trained on labeled data, meaning that the data is already classified or categorized into different classes or categories. The goal is to learn a mapping between input data and the corresponding output labels or categories.\n\nHere's a step-by-step overview of supervised learning:\n\n1. **Data Collection**: A dataset is collected, which consists of input data (features) and corresponding labels or categories.\n2. **Training**: The algorithm is trained on the",
-        "time_sec": 44.019755400004215
+        "response": "In machine learning, there are two primary types of learning: supervised and unsupervised learning. The main difference between them lies in the way the algorithm learns from the data.\n\n**Supervised Learning:**\n\nIn supervised learning, the algorithm is trained on labeled data, where each example is accompanied by a target or response variable. The goal is to learn a mapping between input data and the corresponding output labels, so the algorithm can make predictions on new, unseen data. The algorithm is \"supervised\" because it is guided by the labeled data, which provides the correct answers or targets.\n\nHere's an example:\n\n* You're building a model",
+        "time_sec": 46.799480600020615
       },
       {
         "prompt": "Why do neural networks need activation functions?",
-        "response": "Neural networks need activation functions to introduce non-linearity into the model, allowing it to learn complex relationships between inputs and outputs. Here's why:\n\n**What is a neural network?**\n\nA neural network is a type of machine learning model inspired by the structure and function of the human brain. It consists of layers of interconnected nodes or \"neurons\" that process inputs, perform computations, and produce outputs. Each node applies a mathematical function to the input, called the activation function, to produce an output.\n\n**Why do we need activation functions?**\n\nActivation functions are used to introduce non-linearity into the model, which is essential for",
-        "time_sec": 48.215566499995475
+        "response": "Neural networks need activation functions to introduce non-linearity into the model, which is essential for several reasons:\n\n1. **Non-linearity**: Neural networks are composed of layers of interconnected nodes (neurons) that process inputs and produce outputs. Without activation functions, the output of each node would be a linear combination of the inputs, resulting in a linear model. Activation functions introduce non-linearity, allowing the model to learn complex relationships between inputs and outputs.\n2. **Sigmoidal behavior**: Activation functions enable the model to learn sigmoidal behavior, which is essential for many real-world problems, such as classification and regression tasks. S",
+        "time_sec": 34.06501550000394
       },
       {
         "prompt": "What is a convolutional neural network (CNN)?",
-        "response": "**Convolutional Neural Networks (CNNs)**\n=====================================\n\nA Convolutional Neural Network (CNN) is a type of artificial neural network that is particularly well-suited for image and video processing tasks. It is a key component of many modern deep learning algorithms, including those used in computer vision, natural language processing, and other areas of computer science.\n\n**Key Components of a CNN**\n-----------------------------\n\nA CNN typically consists of the following components:\n\n1. **Convolutional Layers**: These layers apply filters to the input data, extracting features of interest. The filters are small, learnable kernels that slide over the input data,",
-        "time_sec": 60.43791380000039
+        "response": "A convolutional neural network (CNN) is a type of neural network designed to process data with grid-like topology, such as images. It is particularly well-suited for image and video analysis tasks. CNNs are inspired by the structure and function of the visual cortex in the brain, where neurons are organized in a hierarchical manner to process visual information.\n\nThe key characteristics of a CNN are:\n\n1. **Convolutional layers**: These layers apply a set of learnable filters to small regions of the input data, scanning the data in a sliding window fashion. This process is called convolution. The filters are typically small, and the output is",
+        "time_sec": 34.23875640000915
       },
       {
         "prompt": "What is a recurrent neural network (RNN)?",
-        "response": "A recurrent neural network (RNN) is a type of neural network that is particularly well-suited for modeling sequential data, such as time series data, speech, or text. It is a type of artificial neural network that has a memory component, allowing it to keep track of the state of the system over time.\n\nIn an RNN, the input to the network is a sequence of inputs, and the output is also a sequence. The network processes this input sequence in a sequential manner, using the previous output as input to the next output. This allows the network to learn patterns and relationships between the input and output sequences.\n\nRNN",
-        "time_sec": 42.35194279999996
+        "response": "A Recurrent Neural Network (RNN) is a type of neural network designed to handle sequential data, such as time series data, speech, or text. Unlike traditional neural networks, which process data in a fixed, vectorized manner, RNNs process data one sample at a time, allowing them to capture temporal relationships and patterns in the data.\n\nThe key characteristics of RNNs are:\n\n1. **Recurrent connections**: RNNs have feedback connections that allow the network to maintain a hidden state, which is updated at each time step. This hidden state is used to capture the temporal dependencies in the data.\n2. **",
+        "time_sec": 34.35423210001318
       },
       {
         "prompt": "What is a feature store, and why is it useful?",
-        "response": "A feature store is a type of database that stores data in a hierarchical structure, where each node represents a feature or attribute of a table, and each node has a unique identifier and a set of child nodes that represent the relationships between features. This structure allows for efficient querying and manipulation of data, making it a useful tool for data analysis and modeling.\n\nHere's a breakdown of the key features of a feature store:\n\n1. **Hierarchical structure**: Each node represents a feature or attribute of a table, and each node has a unique identifier.\n2. **Child nodes**: Each node has a set of child nodes that represent the relationships between",
-        "time_sec": 38.45994619999692
+        "response": "A feature store is a centralized repository that stores and manages the features of a machine learning (ML) model, allowing for efficient and scalable deployment of these features across multiple applications and environments. The primary purpose of a feature store is to provide a single source of truth for features, making it easier to manage, version, and deploy features to different models and applications.\n\nA feature store typically includes the following key features:\n\n1. **Feature catalog**: A centralized repository that stores information about each feature, including its name, description, data type, and metadata.\n2. **Feature versioning**: The ability to track changes to features over time, allowing",
+        "time_sec": 35.7491461999889
       },
       {
         "prompt": "Explain train-serve skew and how to prevent it.",
-        "response": "Train-serve is a type of food poisoning caused by the bacterium Clostridium perfringens (also known as Clostridium perfringens). It is a common cause of food poisoning, particularly in foods that are high in protein and low in water content, such as meat, poultry, and dairy products.\n\n**What is train-serve?**\n\nTrain-serve is a type of food poisoning that occurs when the bacteria are present in the food at a high enough concentration to cause a severe gastrointestinal illness. The bacteria produce toxins that can cause symptoms such as diarrhea, abdominal cramps, and vomiting.\n\n**How",
-        "time_sec": 42.005483100001584
+        "response": "Train-serve skew, also known as \"train-serve bias\" or \"train-serve asymmetry,\" is a phenomenon in tennis where a player's serve tends to land on one side of the court, resulting in an uneven distribution of points and a disadvantage for the server. This occurs when the server's toss is not consistent, causing the ball to land on one side of the court more frequently than the other.\n\nThere are several factors that contribute to train-serve skew:\n\n1. **Toss inconsistency**: If the server's toss is not consistent, it can lead to an uneven distribution of points. A consistent toss is essential to",
+        "time_sec": 35.63814699999057
       },
       {
         "prompt": "What is data-centric iteration in machine learning?",
-        "response": "Data-centric iteration in machine learning refers to the process of iteratively refining and updating a machine learning model based on new data, rather than relying solely on the initial training data. This approach is also known as incremental learning or incremental machine learning.\n\nIn traditional machine learning, the model is trained on a fixed dataset, and then the model is used to make predictions on new, unseen data. However, this approach can be inefficient and inaccurate, as the model may not be able to adapt to changing patterns and relationships in the data.\n\nData-centric iteration, on the other hand, involves updating the model in real-time as new data becomes available, rather",
-        "time_sec": 46.17949600000429
+        "response": "Data-centric iteration is a machine learning approach that focuses on the data itself, rather than the model or algorithm. It involves iteratively refining the model by re-examining and re-processing the data, rather than relying on manual feature engineering or manual tuning of hyperparameters.\n\nIn traditional machine learning, the model is typically trained on a fixed dataset, and the goal is to find the best parameters that minimize the loss function. However, data-centric iteration takes a more dynamic approach, where the model is trained on a stream of data, and the parameters are updated based on the new data.\n\nThe key characteristics of data-centric iteration are:\n\n1.",
+        "time_sec": 41.22467460000189
       },
       {
         "prompt": "Give 3 tips for studying ML systems effectively.",
-        "response": "Here are three tips for studying Machine Learning (ML) effectively:\n\n1. **Practice with Real-World Data**: Real-world data is essential for learning ML. Practice with datasets that are relevant to your field of interest, such as image classification, text analysis, or regression problems. This will help you understand how ML models work and how to apply them to real-world problems. You can use publicly available datasets like Kaggle, UCI Machine Learning Repository, or even your own datasets.\n\n2. **Focus on Understanding the Basics**: ML is a broad field, and it's easy to get overwhelmed by the number of concepts and techniques. Focus",
-        "time_sec": 49.57351109999581
+        "response": "Here are three tips for studying machine learning (ML) systems effectively:\n\n1. **Start with the basics**: Before diving into advanced topics, make sure you have a solid foundation in the fundamentals of ML, including:\n\t* Linear algebra and calculus\n\t* Probability and statistics\n\t* Programming skills in languages like Python, R, or Julia\n\t* Familiarity with popular ML frameworks like scikit-learn, TensorFlow, or PyTorch\n\nUnderstanding the underlying math and concepts is crucial for building and interpreting ML models.\n\n2. **Focus on practical experience**: Theory is essential, but hands-on experience is equally important. Try",
+        "time_sec": 152.1253114999854
       }
     ],
     "pre_stats": {
-      "cpu_ram_rss_mb": 412.05859375
+      "cpu_ram_rss_mb": 412.3515625
     },
     "post_stats": {
-      "cpu_ram_rss_mb": 5263.6328125
+      "cpu_ram_rss_mb": 12791.5
     }
   },
-  "llama32-1b-qlora-finetome": {
-    "model_name": "llama32-1b-qlora-finetome",
-    "model_path": "models/llama32-1b-qlora-finetome",
+  "llama32-3b-qlora-finetome": {
+    "model_name": "llama32-3b-qlora-finetome",
+    "model_path": "models/llama32-3b-qlora-finetome",
     "num_prompts": 10,
-    "total_time_sec": 470.65772339999967,
-    "avg_time_per_prompt_sec": 47.06577233999997,
+    "total_time_sec": 1447.958666599996,
+    "avg_time_per_prompt_sec": 144.7958666599996,
     "per_prompt_times_sec": [
-      37.216083700004674,
-      49.931414999999106,
-      55.77640980000433,
-      58.89440779999859,
-      31.861521200000425,
-      43.746903200000816,
-      56.95864029999939,
-      58.432084699998086,
-      38.97197839999717,
-      38.80483149999782
+      127.33450399999856,
+      137.89335490000667,
+      143.13410010002553,
+      177.07157229998847,
+      153.71193530000164,
+      117.85371899997699,
+      120.15899409999838,
+      151.1212319000042,
+      177.38427500001853,
+      142.27672400002484
     ],
     "responses": [
       {
         "prompt": "Explain overfitting in simple terms.",
-        "response": "Overfitting is when a model is too complex and fits the training data too well, but fails to generalize well to new, unseen data. This occurs when the model is too specialized to the training data and doesn't capture the underlying patterns or relationships in the data. As a result, the model performs well on the training data but poorly on new data, leading to poor predictions or performance on unseen data. To avoid overfitting, it's important to choose a model that is simple enough to capture the underlying patterns in the data and avoid overfitting to the training data. This can be done by using regularization techniques, cross-validation",
-        "time_sec": 37.216083700004674
+        "response": "Overfitting is when a model is too complex and fits the training data too well, but poorly on new data. This means that the model is memorizing the training data instead of learning general patterns. As a result, the model will perform poorly on new data because it doesn't have the ability to generalize from the training data. Overfitting is a common problem in machine learning and can be solved by using techniques such as regularization or cross-validation. Regularization reduces the complexity of the model, while cross-validation helps to ensure that the model is performing well on new data. By avoiding overfitting, we can improve the accuracy and",
+        "time_sec": 127.33450399999856
       },
       {
         "prompt": "Summarize gradient descent.",
-        "response": "Gradient descent is an optimization algorithm used to find the minimum value of a function. It works by iteratively adjusting the values of the variables in the function to minimize the function's value. The algorithm starts with an initial guess for the minimum value and then updates the variables in the function based on the gradient of the function at each step. The gradient of a function is a measure of how much the function changes at a given point. By updating the variables in the function based on the gradient, the algorithm gradually moves closer to the minimum value. The process is repeated until the function converges to the minimum value. Gradient descent is a widely used",
-        "time_sec": 49.931414999999106
+        "response": "Gradient descent is an optimization algorithm used to find the minimum of a function. It works by iteratively adjusting the input parameters to minimize the function. The algorithm starts with an initial guess for the parameters and then repeatedly updates them in the direction of the steepest descent of the function. The update rule is based on the gradient of the function, which is a vector that points in the direction of the steepest ascent. The algorithm stops when the gradient is close to zero, indicating that the function has been minimized. Gradient descent is widely used in machine learning and other fields to optimize parameters and find the best solution to a problem. It",
+        "time_sec": 137.89335490000667
       },
       {
         "prompt": "Explain the difference between supervised and unsupervised learning.",
-        "response": "Supervised learning is a type of machine learning where the algorithm is trained on labeled data, meaning that the input data is accompanied by an explicit output or target variable. The goal of supervised learning is to learn a mapping function that can take input data and produce output data that is consistent with the known output. In other words, the algorithm is trained on a set of examples where the input and output are paired together.\n\nUnsupervised learning, on the other hand, is a type of machine learning where the algorithm is trained on unlabeled data, meaning that the input data does not have an explicit output or target variable. The goal of uns",
-        "time_sec": 55.77640980000433
+        "response": "Supervised learning is a type of machine learning where the algorithm is trained on labeled data, meaning that the data is already categorized or classified. The goal of supervised learning is to learn a function that maps inputs to outputs based on the labeled data. The algorithm is trained on a labeled dataset and then used to make predictions on new, unlabeled data.\n\nUnsupervised learning, on the other hand, is a type of machine learning where the algorithm is trained on unlabeled data. The goal of unsupervised learning is to discover patterns or structure in the data without any prior knowledge of what the patterns or structure might be. Unsupervised",
+        "time_sec": 143.13410010002553
       },
       {
         "prompt": "Why do neural networks need activation functions?",
-        "response": "Activation functions are used in neural networks to introduce non-linearity into the output of the network. This is important because neural networks are typically designed to learn complex relationships between inputs and outputs, and activation functions help to capture these relationships in a way that is not possible with linear models.\n\nFor example, in a linear model, the output of the network is simply the dot product of the input and weights. This is a straightforward and simple way to represent the relationship between inputs and outputs, but it does not capture any non-linearity or complexity.\n\nActivation functions, on the other hand, introduce a non-linear relationship between the input and output of the",
-        "time_sec": 58.89440779999859
+        "response": "Neural networks need activation functions to introduce non-linearity into the model. Without non-linearity, the neural network would only be able to learn linear relationships between inputs and outputs. Activation functions allow the neural network to learn more complex relationships by introducing non-linear boundaries in the activation space. This enables the neural network to learn and represent a wider range of patterns in the data. Additionally, activation functions help to prevent the neural network from getting stuck in local minima during training, which can improve the overall performance of the model. Common activation functions include sigmoid, ReLU, and tanh. The choice of activation function depends on the specific problem",
+        "time_sec": 177.07157229998847
       },
       {
         "prompt": "What is a convolutional neural network (CNN)?",
-        "response": "A convolutional neural network (CNN) is a type of neural network that is particularly well-suited for image and video analysis tasks. CNNs are designed to process data in a way that is similar to how the human brain processes visual information. They use a technique called convolution, which involves sliding a set of filters over the input data to extract relevant features. This allows the network to learn the patterns and structures of images and videos, and make predictions or decisions based on those patterns. CNNs have been widely used in applications such as object detection, image classification, and image recognition. They are also known for their ability to handle large amounts",
-        "time_sec": 31.861521200000425
+        "response": "A convolutional neural network (CNN) is a type of neural network that is specifically designed to process data with grid-like topology, such as images. CNNs are commonly used for image classification, object detection, and image segmentation tasks. They consist of multiple layers of filters that slide over the input image, extracting features at different scales and orientations. The output of each layer is fed into the next layer, allowing the network to learn increasingly complex features and make accurate predictions. CNNs have achieved state-of-the-art performance on many image-related tasks, making them a popular choice for computer vision applications. \nHere is a simple example of a CNN",
+        "time_sec": 153.71193530000164
       },
       {
         "prompt": "What is a recurrent neural network (RNN)?",
-        "response": "A recurrent neural network (RNN) is a type of neural network that is designed to process sequential data, such as speech, text, or time series data. Unlike traditional feedforward neural networks, which process data in a linear sequence, RNNs can capture the temporal relationships between different time steps and learn to predict future values based on past ones. This is particularly useful for tasks such as speech recognition, language translation, and time series forecasting. RNNs are often implemented using a technique called \"recurrent connections\" or \"feedback connections,\" which allow the network to maintain a \"memory\" of previous inputs and use that information to",
-        "time_sec": 43.746903200000816
+        "response": "A recurrent neural network (RNN) is a type of neural network that is designed to handle sequential data, such as time series data or natural language. RNNs have a feedback loop that allows them to keep track of information over time, which makes them particularly useful for tasks such as language translation, speech recognition, and predicting future events based on past data. RNNs are also known for their ability to learn long-term dependencies in data, which can be difficult for other types of neural networks to capture. However, RNNs can be computationally intensive and require large amounts of training data to achieve good performance. There are also",
+        "time_sec": 117.85371899997699
       },
       {
         "prompt": "What is a feature store, and why is it useful?",
-        "response": "A feature store is a data structure that stores a collection of features or attributes of a data object. It is useful because it allows for efficient storage and retrieval of data, as well as for performing complex queries and aggregations on the data. Feature stores are commonly used in databases and data warehouses, where they provide a centralized location for storing and managing data that is used in various applications and analyses. They are also useful for data analysis and machine learning tasks, where they can be used to store and retrieve large amounts of data in a structured and organized manner. Additionally, feature stores can be used to implement data caching and optimization techniques, such as",
-        "time_sec": 56.95864029999939
+        "response": "A feature store is a centralized repository that stores and manages various features used in machine learning models. It allows for the organization, versioning, and reuse of features across different models and applications. By storing features in a single location, developers can easily access and modify them without having to recreate them from scratch. This not only saves time and effort but also ensures consistency and reproducibility in the development process. Additionally, a feature store provides a single source of truth for features, making it easier to track changes and collaborate with other teams. Overall, a feature store is a valuable tool for data scientists and engineers who work with machine learning models.",
+        "time_sec": 120.15899409999838
       },
       {
         "prompt": "Explain train-serve skew and how to prevent it.",
-        "response": "Train-serve skew occurs when a train is steaming in a direction that is not parallel to the track, causing the train to be deflected off course. This can be caused by a variety of factors, including uneven track conditions, improper braking, or a malfunctioning steering system.\n\nTo prevent train-serve skew, it is important to ensure that the train is properly aligned with the track and that the steering system is functioning correctly. This can be done by regularly inspecting the track and making any necessary repairs or adjustments. Additionally, it is important to maintain a consistent braking system to prevent the train from deviating off course.\n\nIt is",
-        "time_sec": 58.432084699998086
+        "response": "Train-serve skew occurs when a train is scheduled to arrive at a station before the previous train has departed. This can cause delays and inefficiencies in the rail network. To prevent train-serve skew, rail operators can use advanced scheduling algorithms that take into account the departure times of previous trains and adjust the arrival times of subsequent trains accordingly. This ensures that trains arrive at the station at the correct time and reduces the risk of delays. Additionally, rail operators can also use real-time data to monitor train movements and make adjustments to schedules as needed to prevent train-serve skew. By implementing these strategies, rail operators can improve the efficiency and reliability",
+        "time_sec": 151.1212319000042
       },
       {
         "prompt": "What is data-centric iteration in machine learning?",
-        "response": "Data-centric iteration is a machine learning approach that focuses on the collection and analysis of data to train and improve models. It involves using data to train models that can make predictions or decisions based on the data. The goal of data-centric iteration is to create models that are accurate and effective in predicting or making decisions based on the data.\n\nData-centric iteration typically involves the following steps:\n\n1. Data collection: Gathering data from various sources, such as databases, sensors, or user interactions.\n\n2. Data preprocessing: Cleaning, transforming, and preparing the data for analysis.\n\n3. Feature engineering: Selecting relevant features from the data that can be used",
-        "time_sec": 38.97197839999717
+        "response": "Data-centric iteration is a programming paradigm in machine learning where the algorithm iterates over the data in a specific order, such as by rows or by samples. This approach is used in many machine learning algorithms, such as linear regression, decision trees, and neural networks. In data-centric iteration, the algorithm processes each data point one at a time, applying a set of rules or weights to determine the output. This approach is often used when the data is large and complex, as it allows the algorithm to process the data in a controlled and efficient manner. However, data-centric iteration can be slower than other approaches, such as batch iteration, which",
+        "time_sec": 177.38427500001853
       },
       {
         "prompt": "Give 3 tips for studying ML systems effectively.",
-        "response": "1. Practice Active Learning: Active learning involves actively engaging with the material you're studying, rather than simply passively reading or listening to lectures. This can be done through group discussions, problem-solving activities, and self-quizzing. By actively participating in the learning process, you can retain information better and develop a deeper understanding of the subject matter.\n\n2. Use Visual Aids: Visual aids such as diagrams, charts, and videos can help to make complex concepts more understandable and memorable. By using visual aids, you can break down complex information into smaller, more manageable chunks, and better retain information. Additionally, visual aids can help to",
-        "time_sec": 38.80483149999782
+        "response": "1. Practice with real-world data: One of the most effective ways to study machine learning (ML) systems is to practice with real-world data. This will help you understand how the system works in different scenarios and how it can be applied in real-world situations. You can practice with datasets from various sources such as Kaggle, UCI Machine Learning Repository, or your own personal data.\n\n2. Use visualizations: Visualizations are a powerful tool for understanding complex data and ML systems. They can help you identify patterns and trends in the data, which can be used to improve the performance of the system. You can use libraries such as",
+        "time_sec": 142.27672400002484
       }
     ],
     "pre_stats": {
-      "cpu_ram_rss_mb": 5263.6328125
+      "cpu_ram_rss_mb": 10396.48046875
     },
     "post_stats": {
-      "cpu_ram_rss_mb": 5469.48046875
+      "cpu_ram_rss_mb": 12768.39453125
     }
   },
-  "llama32-1b-qlora-exam": {
-    "model_name": "llama32-1b-qlora-exam",
-    "model_path": "models/llama32-1b-qlora-finetome-exam",
+  "llama32-3b-qlora-finetome-exam": {
+    "model_name": "llama32-3b-qlora-finetome-exam",
+    "model_path": "models/llama32-3b-qlora-finetome-exam",
     "num_prompts": 10,
-    "total_time_sec": 462.7958851000003,
-    "avg_time_per_prompt_sec": 46.27958851000003,
+    "total_time_sec": 1183.8005361999967,
+    "avg_time_per_prompt_sec": 118.38005361999967,
     "per_prompt_times_sec": [
-      49.19829199999367,
-      57.77753780000057,
-      59.91363139999885,
-      46.58306209999864,
-      47.06097620000219,
-      50.84095249999518,
-      59.90125799999805,
-      44.96291249999922,
-      21.71163179999712,
-      24.83406449999893
+      160.91232809997746,
+      165.7290786000085,
+      133.7456627000065,
+      46.97312199999578,
+      66.50753259999328,
+      55.848692800005665,
+      78.0309649000119,
+      178.16528790001757,
+      133.7811808999977,
+      164.09286319999956
     ],
     "responses": [
       {
         "prompt": "Explain overfitting in simple terms.",
-        "response": "Overfitting occurs when a model fits noise in the training data and fails to generalize. Underfitting occurs when the model is too simple to capture the underlying pattern. Good ML practice aims to balance bias and variance to achieve low generalization error. Relates to ML monitoring and hyperparameter tuning. Relates to regression and classification tasks. Relates to model selection and hyperparameter search. Relates to model architectures and hyperparameter tuning. Relates to data preprocessing and feature engineering. Relates to feature engineering and data transformation. Relates to model engineering and hyperparameter tuning. Relates to model selection and hyperparameter tuning. Relates",
-        "time_sec": 49.19829199999367
+        "response": "Overfitting occurs when a model fits noise in the training data and fails to generalize. Underfitting occurs when the model is too simple to capture the underlying pattern. Good ML practice aims to balance bias and variance to achieve low generalization error. Techniques such as regularization and data augmentation can help reduce overfitting. In simple terms, overfitting is when a model fits noise and fails to generalize, while underfitting is when the model is too simple to capture the pattern. Good ML practice aims to balance bias and variance to achieve low generalization error. Techniques such as regularization and data augmentation can help reduce overfitting.",
+        "time_sec": 160.91232809997746
       },
       {
         "prompt": "Summarize gradient descent.",
-        "response": "Gradient descent is an iterative optimization algorithm that updates parameters in the direction of the negative gradient of a loss function. Variants include batch, stochastic, and mini-batch gradient descent, as well as adaptive methods like Adam. It converges to a local minimum of a function, but may escape local minima and require large amounts of data or initial guesses for convergence. Despite its simplicity, gradient descent has proven to be a powerful tool for training deep networks and solving many optimization problems. Include an example from industry or real-world applications. Relate it to regression and classification tasks, and mention one typical pitfall. Try to connect it to regression",
-        "time_sec": 57.77753780000057
+        "response": "Gradient descent is an iterative optimization algorithm that updates parameters in the direction of the negative gradient of a loss function. Variants include batch, stochastic, and mini-batch gradient descent, as well as adaptive methods like Adam. Despite its simplicity, gradient descent is surprisingly powerful and is the foundation for many other optimization algorithms. In the context of neural networks, it is typically used to update weights during training. Variants like batch normalization and residual connections can further improve convergence and expressiveness. Despite its name, gradient descent is not a descent method in the classical sense, as it can oscillate or get stuck in local minima. However, with",
+        "time_sec": 165.7290786000085
       },
       {
         "prompt": "Explain the difference between supervised and unsupervised learning.",
-        "response": "Supervised learning is a paradigm where a model is trained on input\u2013output pairs. Each example consists of features x and a target y. The goal is to learn a function that maps x to y and generalizes well to unseen data. Examples include regression and classification tasks. Unsupervised learning, on the other hand, involves analyzing data without explicit labels. The model is trained on the data itself, such as k-means clustering or PCA, and must discover structure in the data without a target label. Examples include dimensionality reduction and feature visualization. Both paradigms have their advantages and disadvantages, and the choice between them depends on",
-        "time_sec": 59.91363139999885
+        "response": "Supervised learning is where a model is trained on input\u2013output pairs. Each example consists of features x and a target label y. The goal is to learn a function that maps x to y and generalizes well to unseen data. Unsupervised learning, on the other hand, is where a model is given a dataset without explicit labels. The goal is to discover structure in the data, such as clusters, low-dimensional manifolds, or latent variables. Examples include k-means clustering and PCA. Both paradigms are fundamental in modern machine learning systems. In practice, we often combine them: we may pre-process unsup",
+        "time_sec": 133.7456627000065
       },
       {
         "prompt": "Why do neural networks need activation functions?",
-        "response": "Activation functions introduce nonlinearity into neural networks, allowing them to learn more complex representations of input data. Common choices include ReLU, sigmoid, and tanh. Without nonlinear activations, a deep network collapses to an effective linear model, limiting its expressiveness. Linear activations are simple but fail to capture nonlinearity, making it difficult for deep networks to represent complex relationships in the input data. The choice of activation function is critical for achieving good generalization and understanding of the network. Relu (or sigmoid) is a common choice, but other options like tanh and tanh sigmoid can also be used. The choice of activation function",
-        "time_sec": 46.58306209999864
+        "response": "Activation functions introduce nonlinearity into neural networks. Without nonlinear activations, a deep network collapses to an effective linear model, limiting its expressiveness. Common choices include ReLU, sigmoid, and tanh. Deriving optimal activation functions analytically is challenging, so researchers often rely on empirical evaluation and techniques like dropout to prevent overfitting. Activation functions are one of the most important components in modern machine learning systems. They allow neural networks to model complex relationships in data and enable them to learn powerful representations. Without nonlinear activations, these networks would be severely limited in their ability to represent real-world data. Activation functions introduce nonlinearity into",
+        "time_sec": 46.97312199999578
       },
       {
         "prompt": "What is a convolutional neural network (CNN)?",
-        "response": "A convolutional neural network (CNN) uses convolutional layers with shared weights and local connectivity, making it well-suited for image data. These layers apply filters to small regions of the input data, capturing spatial hierarchies of features such as edges, textures, and objects. CNNs are widely used in modern machine learning systems for tasks like image classification, object detection, and feature extraction. They often outperform other architectures, such as recurrent neural networks, in many real-world applications. Can you explain the difference between convolutional and recurrent neural networks in the context of this course? Relate it to deployment and MLOps concerns.",
-        "time_sec": 47.06097620000219
+        "response": "CNNs use convolutional layers with shared weights and local connectivity, making them highly effective for image data. They learn hierarchical feature representations, from edges and textures to objects. CNNs have achieved state-of-the-art performance in many vision tasks, including image classification, object detection, and segmentation. They are trained using large datasets and can be fine-tuned for specific tasks with few labeled examples. CNNs share parameters across spatial locations, reducing the number of parameters compared to fully connected networks. This makes them more efficient and easier to train than flat networks. CNNs use convolutional layers with shared weights and local connectivity, making them highly effective for",
+        "time_sec": 66.50753259999328
       },
       {
         "prompt": "What is a recurrent neural network (RNN)?",
-        "response": "Recurrent neural networks (RNNs) process sequences by maintaining a hidden state that evolves over time. They share parameters across timesteps and can model temporal dependencies in data such as text or time series. RNNs use a cell state and a output layer to compute predictions based on the current and previous values in the sequence. Examples include LSTM networks and GRU networks. RNNs are widely used in tasks like language translation, natural language processing, and time series forecasting. Relates to: RNNs, LSTM networks, GRU networks, recurrent neural networks. Relates to: recurrent neural networks, LSTM networks, GRU",
-        "time_sec": 50.84095249999518
+        "response": "Recurrent neural networks (RNNs) process sequences by maintaining a hidden state that evolves over time. They share parameters across timesteps and can model temporal dependencies in data such as text or time series. RNNs can be difficult to train due to vanishing gradients, but variants like long short-term memory (LSTM) and gated recurrent units (GRU) help mitigate this issue. RNNs are one of the first architectures to model temporal dependencies in data and remain widely used in many applications. They can model both short-term and long-term dependencies in sequences, making them very powerful for tasks like language modeling and time series forecasting",
+        "time_sec": 55.848692800005665
       },
       {
         "prompt": "What is a feature store, and why is it useful?",
-        "response": "A feature store is a system that manages ML features for reuse across training and inference. It standardizes feature definitions, provides data quality guarantees, and reduces train\u2013serve skew by serving the same features in both phases. Feature stores are common in production environments and are often integrated with ML pipelines and data warehouses. They help improve data consistency, reduce train\u2013serve latency, and make it easier to reason about feature dependencies. Relating to the previous answer, can you explain feature stores in the context of serverless ML and real-time feature engineering? Relate it to deployment and MLOps concerns. Try to connect it to regression and classification tasks",
-        "time_sec": 59.90125799999805
+        "response": "A feature store is a system that manages ML features for reuse across training and inference. It standardizes feature definitions, provides data quality guarantees, and reduces train\u2013serve skew by serving the same features in both phases. This makes it easier to train models that generalize to unseen data and reduces the risk of data drift causing performance degradation in production. Feature stores can be implemented using a variety of technologies, including ML serving platforms, data warehouses, and specialized feature data management products. The key idea is to separate the responsibility of defining and serving features from the responsibility of training and deploying ML models. This decomposition makes it easier to reason about the data and",
+        "time_sec": 78.0309649000119
       },
       {
         "prompt": "Explain train-serve skew and how to prevent it.",
-        "response": "Train-serve skew is the mismatch between training-time and serving-time data or feature computation. It leads to degraded performance in production when the model sees different distributions or feature logic than during training. To prevent train-serve skew, you can use techniques such as data synchronization, feature normalization, and model serving strategies that preserve the data or feature logic during training. Additionally, monitoring and controlling data drift and feature changes can help minimize the impact of skew on production. Relates to: ML monitoring, feature engineering, data drift, model serving. Try using a tool like MLflow or PyTorch's built-in features to help manage train-serve",
-        "time_sec": 44.96291249999922
+        "response": "Train-serve skew is the mismatch between training-time and serving-time data or feature computation. It leads to degraded performance in production when the model sees different distributions or feature logic than during training. To prevent train-serve skew, use data pipelines that normalize features in production and monitor data drift. Also, design systems that can handle small data skew and use online feature stores to serve the same features to both training and production environments. Finally, use feature flags to roll out new features gradually and monitor their impact on production data. By addressing train-serve skew, you can ensure your models generalize well to unseen data and reduce the risk of data-driven",
+        "time_sec": 178.16528790001757
       },
       {
         "prompt": "What is data-centric iteration in machine learning?",
-        "response": "Data-centric iteration in machine learning involves focusing on the data itself rather than just the model. This means that instead of changing the model architecture or hyperparameters, the focus is on collecting more high-quality data or refining the existing data. Data-centric iteration is important because it allows for more robust models that are better adapted to the underlying distribution of the data. It also allows for faster iteration and more rapid deployment of new features. In contrast, model-centric iteration focuses on changing the model architecture or hyperparameters, which can be slower and more difficult to achieve. However, model-centric iteration can lead to more accurate models, but it requires more expertise and",
-        "time_sec": 21.71163179999712
+        "response": "Data-centric iteration refers to the practice of refining a model by collecting more data that is relevant to the problem at hand. This can involve gathering additional examples, experimenting with different features or labels, or exploring new domains or contexts. By iterating on the data, we can improve the accuracy and robustness of our models over time. In contrast, parameter-centric iteration focuses on adjusting model hyperparameters or updating weights during training. While parameter-centric methods can be efficient for some tasks, data-centric iteration is often more important for achieving long-term progress in machine learning systems. Examples of data-centric iteration include feature stores, data mules, and active learning pipelines",
+        "time_sec": 133.7811808999977
       },
       {
         "prompt": "Give 3 tips for studying ML systems effectively.",
-        "response": "ML systems can be complex, so it's important to strike a balance between understanding the underlying algorithms and the broader context in which they are deployed. Here are three tips for studying ML systems effectively:\n\n1. Focus on the problem domain: ML systems are often developed to solve specific problems, such as image classification or regression. Understanding the problem domain and how ML systems are designed to address it is crucial for comprehending the system's behavior and limitations. This includes understanding the data sources, feature engineering, model selection, and hyperparameter tuning.\n\n2. Analyze the system's architecture: ML systems can be composed of multiple components, such as models",
-        "time_sec": 24.83406449999893
+        "response": "ML systems involve modeling data with parameters learned from training data, and deploying those models in production to serve predictions or other tasks. Effective study involves understanding the tradeoff between training and inference latency, data skew, and feature engineering, as well as developing skills in tools like TensorFlow, PyTorch, and scikit-learn. It also includes understanding how to monitor and debug deployed systems, and how to handle data drift and label shift over time. With practice and experience, one can develop a deep understanding of the ML pipeline and how to optimize it for real-world use cases. Good ML systems are data-efficient, low-latency, and robust",
+        "time_sec": 164.09286319999956
       }
     ],
     "pre_stats": {
-      "cpu_ram_rss_mb": 5469.42578125
+      "cpu_ram_rss_mb": 12768.25390625
     },
     "post_stats": {
-      "cpu_ram_rss_mb": 5496.30859375
+      "cpu_ram_rss_mb": 12458.66015625
+    }
+  },
+  "llama32-3b-qlora-exam": {
+    "model_name": "llama32-3b-qlora-exam",
+    "model_path": "models/llama32-3b-qlora-exam",
+    "num_prompts": 10,
+    "total_time_sec": 957.0866120000137,
+    "avg_time_per_prompt_sec": 95.70866120000137,
+    "per_prompt_times_sec": [
+      127.4237667999987,
+      43.018823799997335,
+      144.59807839998393,
+      72.93910059999325,
+      70.1129241999879,
+      94.79931629999192,
+      131.18683190000593,
+      54.062492199998815,
+      103.92663960001664,
+      115.00605270001688
+    ],
+    "responses": [
+      {
+        "prompt": "Explain overfitting in simple terms.",
+        "response": "Overfitting occurs when a model fits noise in the training data and fails to generalize. It uses too many parameters relative to samples, such as deep networks on small datasets. Underfitting, on the other hand, captures only the bias\u2013variance tradeoff; simple models on large datasets can also perform poorly if the underlying function is complex. Good ML practice aims to balance bias and variance, control capacity, and use techniques like data augmentation, regularization, and better initializations to reduce the risk of overfitting while capturing the underlying pattern.",
+        "time_sec": 127.4237667999987
+      },
+      {
+        "prompt": "Summarize gradient descent.",
+        "response": "Gradient descent is an iterative optimization algorithm that updates parameters in the direction of the negative gradient of a loss function. Variants include batch, stochastic, and mini-batch gradient descent, as well as adaptive methods like Adam. Gradient descent is one of the most important algorithms in modern machine learning systems.",
+        "time_sec": 43.018823799997335
+      },
+      {
+        "prompt": "Explain the difference between supervised and unsupervised learning.",
+        "response": "Supervised learning involves a model trained on input\u2013output pairs. Each example consists of features x and a target label y. The goal is to learn a function that maps x to y and generalizes well to unseen data. Common tasks include regression and classification. Unsupervised learning deals with datasets without explicit labels. The goal is to discover structure in the data, such as clusters, low-dimensional manifolds, or latent variables. Examples include k-means clustering and PCA. Despite the name, unsupervised learning is important for understanding data distribution and organizing it for downstream tasks. In practice, unsupervised methods are often followed by",
+        "time_sec": 144.59807839998393
+      },
+      {
+        "prompt": "Why do neural networks need activation functions?",
+        "response": "Activation functions introduce nonlinearity into neural networks. Common choices include ReLU, sigmoid, and tanh. Without nonlinear activations, a deep network collapses to an effective linear model, limiting its expressiveness. With nonlinear activations, the network can represent more complex functions, enabling it to learn deeper and representational power. Typical choices include ReLU, sigmoid, and tanh, but others like Leaky ReLU, Swish, and Gelu are also used in practice. Good initialization, a suitable architecture, and a large enough dataset are also crucial for achieving low error and high interpretability.",
+        "time_sec": 72.93910059999325
+      },
+      {
+        "prompt": "What is a convolutional neural network (CNN)?",
+        "response": "Convolutional neural networks (CNNs) use convolutional layers with shared weights and local connectivity, making them highly effective for image data. They learn hierarchical feature representations, from edges and textures to objects. CNNs typically include auxiliary heads for tasks such as segmentation or classification. By reusing the same weights across spatial locations, CNNs reduce the amount of training data needed and improve translation invariance compared to fully connected networks.",
+        "time_sec": 70.1129241999879
+      },
+      {
+        "prompt": "What is a recurrent neural network (RNN)?",
+        "response": "Recurrent neural networks (RNNs) process sequences by maintaining a hidden state that evolves over time. They share parameters across timesteps and can model temporal dependencies in data such as text or time series. RNNs can be simple vanilla RNNs or more complex architectures like LSTM networks, which introduce additional mechanisms like gating mechanisms and reset buttons to control the flow of information. Despite their simplicity, RNNs are surprisingly powerful and can learn long-range dependencies in data, making them useful for tasks like language modeling, machine translation, and predicting stock prices.",
+        "time_sec": 94.79931629999192
+      },
+      {
+        "prompt": "What is a feature store, and why is it useful?",
+        "response": "A feature store is a system that standardizes data inference into small, reusable functions called features. These features can then be easily composed together to train complex models or infer answers to business questions. By decoupling offline feature groups from online serving, the feature store reduces train\u2013serve skew and makes it easier to update features without changing the deployed pipeline. Features can be grouped by domain, product, or business capability, and they can be exposed via an API or integrated directly into ML monitoring systems. By standardizing how features are defined, obtained, and consumed, the feature store improves data quality, reduces data leakage, and simplifies ML engineering",
+        "time_sec": 131.18683190000593
+      },
+      {
+        "prompt": "Explain train-serve skew and how to prevent it.",
+        "response": "Train-serve skew is the mismatch between training-time and serving-time data or feature computation. It leads to degraded performance in production when the model sees different distributions or feature logic than during training. Preventing train-serve skew is crucial for achieving low latency and high reliability in online serving systems. Techniques include monitoring feature stores for data drift, online feature groups for feature scheduling, and retry mechanisms or fallbacks for handling service failures. By understanding train-serve skew and applying these strategies, you can ensure that your model sees a consistent view of the data and environment during training and inference.",
+        "time_sec": 54.062492199998815
+      },
+      {
+        "prompt": "What is data-centric iteration in machine learning?",
+        "response": "Data-centric iteration is the process of planning several small experiments around a single hypothesis, such as a new dataset or a different initialization, instead of spending weeks on a single large experiment. By analyzing the results of these small experiments, we can identify which directions to prioritize next and reduce the risk of wasting time on unimportant hypotheses in the future. This approach makes data-centric iteration more efficient and helps avoid getting locked into an expensive experiment that may not lead to significant improvements.",
+        "time_sec": 103.92663960001664
+      },
+      {
+        "prompt": "Give 3 tips for studying ML systems effectively.",
+        "response": "ML systems consist of models and a lifecycle: training, inference, and monitoring. Models can be trained on labeled data to learn a function that generalizes well to unseen examples. In inference, the trained function is applied to new inputs to obtain predictions. Monitoring tracks performance on a validation set and data drift, label shift, or other data anomalies to detect when the system degrades. Regularly retraining or reconfiguring the model, updating feature engineering, and refining the monitoring pipeline are common ways to keep the system performing well over time.",
+        "time_sec": 115.00605270001688
+      }
+    ],
+    "pre_stats": {
+      "cpu_ram_rss_mb": 12459.640625
+    },
+    "post_stats": {
+      "cpu_ram_rss_mb": 12627.3671875
     }
   }
 }

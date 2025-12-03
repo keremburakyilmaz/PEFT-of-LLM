@@ -20,9 +20,10 @@ except ImportError:
 DEVICE = torch.device("cpu")
 
 MODELS = {
-    "llama32-1b-base": "meta-llama/Llama-3.2-1B-Instruct",
-    "llama32-1b-qlora-finetome": "models/llama32-1b-qlora-finetome",
-    "llama32-1b-qlora-exam": "models/llama32-1b-qlora-finetome-exam",
+    "llama32-3b-base": "meta-llama/Llama-3.2-3B-Instruct",
+    "llama32-3b-qlora-finetome": "models/llama32-3b-qlora-finetome",
+    "llama32-3b-qlora-finetome-exam": "models/llama32-3b-qlora-finetome-exam",
+    "llama32-3b-qlora-exam": "models/llama32-3b-qlora-exam",
 }
 
 EVAL_PROMPTS = [

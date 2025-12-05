@@ -6,23 +6,16 @@
 
 ## Abstract
 
-This project implements and evaluates Parameter-Efficient Fine-Tuning (PEFT) methods, specifically LoRA and QLoRA, on Llama 3.2 models for domain-specific instruction following. I fine-tuned models on both [general instruction data](https://huggingface.co/datasets/mlabonne/FineTome-100k) and domain-specific [exam preparation data](https://huggingface.co/datasets/kevembuvak/id2223_exam_prep), comparing different model sizes (1B vs 3B parameters) and quantization strategies. The final models are exported to GGUF format and deployed via a Gradio web interface on Huggingface space [kevembuvak/iris](https://huggingface.co/spaces/kevembuvak/iris) which is an exam preparation study chatbot.
+This project implements and evaluates Parameter-Efficient Fine-Tuning (PEFT) methods, specifically LoRA and QLoRA, on Llama 3.2 models for domain-specific instruction following. Models were fine-tuned on both [general instruction data](https://huggingface.co/datasets/mlabonne/FineTome-100k) and domain-specific [exam preparation data](https://huggingface.co/datasets/kevembuvak/id2223_exam_prep), comparing different model sizes (1B vs 3B parameters) and quantization strategies. The final models are exported to GGUF format and deployed via a Gradio web interface on Huggingface space [kevembuvak/iris](https://huggingface.co/spaces/kevembuvak/iris) which is an exam preparation study chatbot.
 
-## 1. Introduction
+## 1. Objectives
 
-### 1.1 Objectives
 - Implement LoRA and QLoRA fine-tuning on Llama 3.2 models
 - Compare full-precision LoRA vs 4-bit quantized QLoRA
 - Evaluate the impact of model size (1B vs 3B parameters)
 - Fine-tune models on domain-specific data (ID2223 exam preparation)
 - Export models to GGUF format for efficient CPU inference
 - Deploy models via a web interface for practical use
-
-### 1.2 Motivation
-Parameter-efficient fine-tuning enables adapting large language models to specific tasks without full fine-tuning, reducing computational requirements and memory footprint. This is particularly important for:
-- Resource-constrained environments
-- Domain-specific applications
-- Rapid iteration and experimentation
 
 ## 2. Methodology
 
@@ -40,7 +33,7 @@ Parameter-efficient fine-tuning enables adapting large language models to specif
 
 #### Stage 2: Domain-Specific Fine-Tuning
 - **ID2223 Exam Prep Dataset** (`data/id2223_exam_prep_full.jsonl`)
-  - 6,521 examples
+  - 6521 examples
   - Domain: KTH ID2223 course content
   - Format: JSONL with conversations (user/assistant pairs)
   - **Note:** Dataset was created with the help of AI.
@@ -95,7 +88,7 @@ LoraConfig(
 | llama32-1b-qlora-finetome-exam | 1B | QLoRA (4-bit) | FineTome | Exam | checkpoint-4000, 4500, 4950 |
 | llama32-3b-qlora-finetome | 3B | QLoRA (4-bit) | FineTome | - | checkpoint-4000, 4500, 4950 |
 | llama32-3b-qlora-finetome-exam | 3B | QLoRA (4-bit) | FineTome | Exam | checkpoint-4000, 4500, 4950 |
-| llama32-3b-qlora-exam | 3B | QLoRA (4-bit) | - | Exam (direct) | checkpoint-600, 800, 1000, 1200 |
+| llama32-3b-qlora-exam | 3B | QLoRA (4-bit) | - | Exam | checkpoint-600, 800, 1000, 1200 |
 
 ### 2.5 Training Infrastructure
 - Framework: PyTorch, Transformers, PEFT, TRL
@@ -120,13 +113,13 @@ Three evaluation scripts were created:
       - `llama32-1b-qlora-finetome`
       - `llama32-3b-qlora-finetome`
 2. **`eval_domain.py`** - Evaluates domain-specific performance on ID2223 topics
-   - Models tested: 
+   - Models evaluated: 
       - `meta-llama/Llama-3.2-3B-Instruct` 
       - `llama32-3b-qlora-finetome`
       - `llama32-3b-qlora-finetome-exam`
       - `llama32-3b-qlora-exam`
 3. **`eval_pytorch_vs_gguf.py`** - Compares PyTorch vs GGUF inference performance
-   - Models tested: 
+   - Models evaluated: 
       - `llama32-1b-lora-finetome`
       - `llama32-1b-qlora-finetome`
       - `llama32-3b-qlora-finetome`
@@ -295,7 +288,7 @@ The `tools/export_to_gguf.py` script:
 - **Model Repositories**:
   - `kevembuvak/llama32-3b-qlora-finetome-exam-gguf` - 3B QLoRA Finetome + Exam model
   - `kevembuvak/llama32-1b-qlora-finetome-exam-gguf` - 1B QLoRA Finetome + Exam model
-  - `kevembuvak/llama32-3b-qlora-exam-gguf` - 3B QLoRA Exam (direct) model
+  - `kevembuvak/llama32-3b-qlora-exam-gguf` - 3B QLoRA Exam model
 
 ## 5. Key Findings and Discussion
 
